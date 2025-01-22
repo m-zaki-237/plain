@@ -130,6 +130,9 @@ input, button, i{
     background: rgba(0,0,0,0.65);
     display: none;
 }
+.lightbox.show{
+    display: block;
+}
 .lightbox .wrapper{
     position: absolute;
     left: 50%;
@@ -150,8 +153,17 @@ input, button, i{
     max-height: 65vh;
     max-width: 90vh;
 }
+.preview .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 65vh;
+    max-width: 90vh;
+    overflow: hidden;
+    background: #fff;
+}
 .preview .img img{
-    height: 100%;
+    max-height: 100%;
     max-width: 100%;
     object-fit: contain;
 }
